@@ -41,6 +41,7 @@ public:
                 //stylovani QLineEdit a zmena jeho nastaveni tak, aby umoznovalo psat uzivateli pouze cislice (1->9)
                 ln->setStyleSheet("font: bold; font-size: 18px;");
                 ln->setMaxLength(1);
+                ln->setAlignment(Qt::AlignCenter);               // !!!!!!!!!!!!!!!! zmena polohy
                 ln->setValidator(new QIntValidator(1,9,this));// cisla (1->9)
                 ln->setValidator(new QRegularExpressionValidator(QRegularExpression("[1-9]\\d{0,2}"),this));
                 seznam.push_back(ln);
