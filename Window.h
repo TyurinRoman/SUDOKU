@@ -171,10 +171,10 @@ public:
                     for(int i=0;i<9;i++){
                         for(int j=0;j<9;j++){
                             if((seznam.at(9*i+j)->isEnabled()==true)&&(seznam.at(9*i+j)->text().toInt()==vzor.at(j).at(i))){ //spravne cislo v bunce
-                                seznam.at(9*i+j)->setStyleSheet("border: 2px solid green; font: bold; font-size: 18px;");
+                                seznam.at(9*i+j)->setStyleSheet("border: 2px solid green; font: bold; font-size: 18px; background-color:palegreen;");
                             }
                             else if((seznam.at(9*i+j)->isEnabled()==true)&&(seznam.at(9*i+j)->text().toInt()!=vzor.at(j).at(i))){ // nespravne cislo v bunce
-                                seznam.at(9*i+j)->setStyleSheet("border: 2px solid red; font: bold; font-size: 18px;");
+                                seznam.at(9*i+j)->setStyleSheet("border: 2px solid red; font: bold; font-size: 18px; background-color:pink;");
                                 mistake++;
                             }
                         }
